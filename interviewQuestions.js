@@ -47,3 +47,20 @@ fraction=(a)=>{
 }
 
 fraction([1,1,0,0,-1,-1,-1]);
+
+//staircase problem Consider a staircase of size=4('#' to be right aligned right aligned
+//     #
+//    ##
+//   ###
+//  ####
+
+stairCase=(n)=>{
+    let s='';
+    for(let i=0;i<n;i++){
+        s+=' '.repeat(n-i)+'#'.repeat(i)+'\n';
+    }
+
+    console.log(s);
+}
+
+stairCase(4);
